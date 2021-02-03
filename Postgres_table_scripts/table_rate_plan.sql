@@ -1,17 +1,18 @@
--- Table: public.room
+-- Table: public.rateplan
 
--- DROP TABLE public.room;
+-- DROP TABLE public.rateplan;
 
-CREATE TABLE public.room
+CREATE TABLE public.rateplan
 (
-    roomhotel_id character varying(8) COLLATE pg_catalog."default" NOT NULL,
-    room_id character varying(3) COLLATE pg_catalog."default" NOT NULL,
-    roomdescription character varying(31) COLLATE pg_catalog."default" NOT NULL,
-    roomname character varying(31) COLLATE pg_catalog."default" NOT NULL,
-    capacity text COLLATE pg_catalog."default"
+    rate_planhotel_id character varying(8) COLLATE pg_catalog."default" NOT NULL,
+    rate_planrate_plan_id character varying(3) COLLATE pg_catalog."default" NOT NULL,
+    rate_planname character varying(19) COLLATE pg_catalog."default" NOT NULL,
+    rate_planmeal_plan character varying(9) COLLATE pg_catalog."default" NOT NULL,
+    rate_plan_otherconditions character varying[] COLLATE pg_catalog."default",
+    rate_plan_cancellation_policy jsonb
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE public.room
+ALTER TABLE public.rateplan
     OWNER to postgres;
