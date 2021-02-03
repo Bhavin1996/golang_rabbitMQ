@@ -11,7 +11,7 @@ Run the below postgres table creation scripts
 
 ## RabbitMQ Setup
 
-The rabbitMQ setup can be done using this Blog written by <a href="www.github.com/hims1911">hims1911</a> (https://link.medium.com/h2aiFd60adb)
+The rabbitMQ setup can be done using this Blog written by <a href="https://github.com/hims1911">hims1911</a> (https://link.medium.com/h2aiFd60adb)
 
 ## Producer Script
 
